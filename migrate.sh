@@ -27,6 +27,7 @@ cp -f main.go $DIR
 	cp -f env.go $DIR
 cd $DIR
 
+gofmt -w -r '"internal/singleflight" -> "h12.me/gogetx/singleflight"' vcs.go
 gofmt -w -r '[]*Command{
 	cmdBuild,
 	cmdClean,
@@ -54,10 +55,6 @@ gofmt -w -r '[]*Command{
 	helpTestflag,
 	helpTestfunc,
 } -> []*Command{cmdGet}' main.go
-
 gofmt -w -r 'flag.Args() -> append([]string{"get"}, os.Args[1:]...)' main.go
 gofmt -w -r 'flag.Parse() -> func(){}()' main.go
-#gofmt -w -r 'selectTag(vers, tags) -> selectCustomTag(root, vers, tags)' get.go
 gofmt -w -r 'vcs.tagSync(root, selectTag(vers, tags)) -> vcs.customTagSync(root, vers, tags)' get.go
-
-gofmt -w -r '"internal/singleflight" -> "h12.me/gogetx/singleflight"' vcs.go
