@@ -1,0 +1,9 @@
+-
+    path: appcoachs.net/.*
+    tags:
+        - develop
+        - master
+-
+    path: .*
+    tags:
+        - master
