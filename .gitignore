@@ -1,7 +1,6 @@
 build.go
 discovery.go
 env.go
-gen.go
 get.go
 go11.go
 gogetx

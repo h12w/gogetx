@@ -57,7 +57,6 @@ gofmt -w -r '[]*Command{
 
 gofmt -w -r 'flag.Args() -> append([]string{"get"}, os.Args[1:]...)' main.go
 gofmt -w -r 'flag.Parse() -> func(){}()' main.go
+gofmt -w -r 'selectTag(vers, tags) -> selectCustomTag(vers, tags)' get.go
 
 gofmt -w -r '"internal/singleflight" -> "h12.me/gogetx/singleflight"' vcs.go
-
-go build
