@@ -30,12 +30,13 @@ go build h12.me/gogetx
         - master
 ```
 
-Examples:
-
-* For your_org/abc with tag `v1.2` defined, it will be checkout to
+* For your_org/abc with tag `v1.2` defined, it will be checked out to
 tag `v1.2`.
-* For your_org/xyz without tag v1.2 but with branch `develop`, it will be checkout
+* For your_org/def without tag v1.2 but with branch `develop`, it will be checked out
 to branch `develop`.
+* For your_org/xyz without tag v1.2 or branch `develop`, it will be checked out to
+`master`.
+* Any other repositories will be checked out to `master`.
 
 ### Run gogetx
 
