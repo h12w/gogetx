@@ -1,6 +1,7 @@
 -
-    path: appcoachs.net/.*
+    path: h12.me/.*
     tags:
+        - v1.2
         - develop
         - master
 -
