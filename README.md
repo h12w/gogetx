@@ -1,7 +1,7 @@
-gogetx: a fork of "go get" that supports tag & branch
-=====================================================
+gogetx: a patch of "go get" to support tag & branch
+===================================================
 
-gogetx is a fork of "go get" that supports checking out repositories to
+gogetx is a patch of "go get" to support checking out repositories to
 specified branches or tags.
 
 Quick Start
