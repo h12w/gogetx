@@ -10,6 +10,7 @@ cd $GOROOT/src/cmd/go
 cp -f main.go $DIR
 	cp -f get.go  $DIR
 		cp -f build.go $DIR
+			cp -f zosarch.go $DIR
 			cp -f note.go $DIR
 			cp -f signal.go $DIR
 				cp -f signal_unix.go $DIR
