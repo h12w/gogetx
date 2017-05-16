@@ -2,7 +2,7 @@ gogetx: a patch of "go get" to support tag & branch
 ===================================================
 
 gogetx is a patch of "go get" to support checking out repositories to
-specified branches or tags.
+specified branches or tags. (upgraded to go1.8.1)
 
 Quick Start
 -----------

@@ -6,6 +6,7 @@ set -x
 DIR=`pwd`
 GOROOT=`go env GOROOT`
 
+cp -f -r $GOROOT/src/cmd/internal/browser $DIR
 cd $GOROOT/src/cmd/go
 cp -f main.go $DIR
 	cp -f get.go  $DIR
@@ -28,12 +29,14 @@ cp -f main.go $DIR
 	cp -f env.go $DIR
 cd $DIR
 
+gofmt -w -r '"cmd/internal/browser" -> "h12.me/gogetx/browser"' http.go
 gofmt -w -r '"internal/singleflight" -> "h12.me/gogetx/singleflight"' vcs.go
 gofmt -w -r '[]*Command{
 	cmdBuild,
 	cmdClean,
 	cmdDoc,
 	cmdEnv,
+	cmdBug,
 	cmdFix,
 	cmdFmt,
 	cmdGenerate,
