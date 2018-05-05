@@ -10,9 +10,9 @@ Quick Start
 ### Get "gogetx"
 
 ```bash
-go get -u -d h12.me/gogetx
-go generate h12.me/gogetx
-go build h12.me/gogetx
+go get -u -d h12.io/gogetx
+go generate h12.io/gogetx
+go build h12.io/gogetx
 ```
 
 ### Write gogetx-config.yml
